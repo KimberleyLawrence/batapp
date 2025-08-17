@@ -9,5 +9,6 @@ export default [
     route("/look", "pages/look.tsx"),
     route("/report", "pages/report.tsx"),
     route("/rescue", "pages/rescue.tsx"),
-   
+    route("/accordion", "pages/accordion.tsx"),
+
 ] satisfies RouteConfig;
