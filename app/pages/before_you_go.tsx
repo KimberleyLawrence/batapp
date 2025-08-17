@@ -69,21 +69,24 @@ export default function BeforeYouGo() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-
-              <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Human Emergency</h2>
-              <tbody>
+           <tbody>
                 <tr className="border-b dark:bg-gray-800 dark:border-gray-700  ">
                   <td className="p-4">
-                    <img src="/public/images/medic.svg" className="w-70 md:w-60 max-w-full max-h-full" alt="medic" />
+                    <img src="/public/images/medic.svg" className="w-70 md:w-100 max-w-full max-h-full" alt="medic" />
                   </td>
-                  <td className="px-6 py-4 text-gray-900 dark:text-white">
+                   <td className="p-4">
+                  <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Human Emergency</h2>
+                  </td>
+                  </tr>
+                  </tbody>
+             
+             
 
                     <h1 className="font-semibold">Emergency ID: YBP207</h1>
-                    <p>Located at the toilets at Fairlea oval – Please quote if you need to call Emergency Services</p>
-                  </td>
-                </tr>
-              </tbody>
+                    <p>Located at the toilets at Fairlea oval – Please quote ID Number if you need to call Emergency Services</p>
+             
             </div>
+           
 
 
 
