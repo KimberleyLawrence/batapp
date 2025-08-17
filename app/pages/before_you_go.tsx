@@ -3,7 +3,7 @@ import type { Route } from "./+types/home";
 import Pagetitle from "~/components/pagetitle";
 
 
-export function meta({}: Route.MetaArgs) {
+export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
     { name: "description", content: "Welcome to React Router!" },
@@ -13,60 +13,124 @@ export function meta({}: Route.MetaArgs) {
 export default function BeforeYouGo() {
   return (
     <>
-      <Pagetitle name="Before You Go"/> 
-      
-      <Batnoise/>
+      <Pagetitle name="Before You Go" />
 
-<div id="accordion-flush" data-accordion="collapse" data-active-classNamees="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classNamees="text-gray-500 dark:text-gray-400">
-  <h2 id="accordion-flush-heading-1">
-    <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-      <span>Safety</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-flush-body-1" className="hidden" aria-labelledby="accordion-flush-heading-1">
-          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-          
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-    </div>
-  </div>
-  <h2 id="accordion-flush-heading-2">
-    <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-      <span>Is there a Figma file available?</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-flush-body-2" className="hidden" aria-labelledby="accordion-flush-heading-2">
-    <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
-    </div>
-  </div>
-  <h2 id="accordion-flush-heading-3">
-    <button type="button" className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-      <span>What are the differences between Flowbite and Tailwind UI?</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-flush-body-3" className="hidden" aria-labelledby="accordion-flush-heading-3">
-    <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-      <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
-        <li><a href="https://flowbite.com/pro/" className="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-        <li><a href="https://tailwindui.com/" rel="nofollow" className="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+      <Batnoise />
+
+
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+            <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Safety  </h2>
+
+
+
+
+            <div className="relative overflow-x-auto sm:rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+
+                <tbody>
+                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td className="p-4">
+                      <img src="/public/images/user-pair.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                    </td>
+                    <td className="px-6 py-4 text-gray-900 dark:text-white">
+                      <h1 className="font-semibold">Pair Up</h1>
+                      <p>Go in Pairs or let someone know you are going to check camp.</p>
+                    </td>
+                  </tr>
+
+                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td className="p-4">
+                      <img src="/public/images/shh.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                    </td>
+                    <td className="px-6 py-4 text-gray-900 dark:text-white">
+                      <h6 className="font-semibold">Be Quiet</h6>
+                      Please be quiet and walk slowly through camp.
+                    </td>
+                  </tr>
+
+                  <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td className="p-4">
+                      <img src="/public/images/person-hiking-solid_wpath.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                    </td>
+                    <td className="px-6 py-4 text-gray-900 dark:text-white">
+                      <h6 className="font-semibold">Walk on Path</h6>
+                      ALWAYS stay on path - please do not go under the camp of bats.
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+
+              <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Human Emergency</h2>
+              <tbody>
+                <tr className="border-b dark:bg-gray-800 dark:border-gray-700  ">
+                  <td className="p-4">
+                    <img src="/public/images/medic.svg" className="w-70 md:w-60 max-w-full max-h-full" alt="medic" />
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 dark:text-white">
+
+                    <h1 className="font-semibold">Emergency ID: YBP207</h1>
+                    <p>Located at the toilets at Fairlea oval – Please quote if you need to call Emergency Services</p>
+                  </td>
+                </tr>
+              </tbody>
+            </div>
+
+
+
+
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+            
+              <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Equipment</h2>
+
+              <h3 className="text-gray-900 dark:text-white text-2xl underline mb-2">For Observation</h3>
+              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                <ul>
+                  <li>Binoculars</li>
+                    <li>Water</li>
+                    <li>Sun Protection</li>
+                    <li>Aerogard</li>
+                    <li>Gloves</li>
+                    <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
+                    <li>Long Socks /Long Pants/protective Shoes</li>
+                </ul>
+              </p>
+                  <h3 className="text-gray-900 dark:text-white text-2xl underline mb-2">For Rescue</h3>
+              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+                <ul>
+                  <li>Water - preboiled preferred</li>
+                    <li>Bat wraps</li>
+                    <li>Syringes</li>
+                    <li>Dummies/teats</li>
+                    <li>Glucose (glucodin powder)</li>
+                    <li>Basket & handwarmers</li>
+                    <li>Identification</li>
+                </ul>
+              </p>
+              
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+
 
 
     </>
