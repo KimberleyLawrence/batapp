@@ -10,13 +10,6 @@ export function meta({ }: Route.MetaArgs) {
   ];
 }
 
-const contentOne = (<>
-  <p>This</p>
-  <p>is</p>
-  <p>content</p>
-
-</>
-);
 
 export default function AccordionPage() {
   return (
@@ -24,12 +17,9 @@ export default function AccordionPage() {
       <Pagetitle name="Accordion" />
 
       <Accordion>
-        <AccordionItem title="Title 1" content={contentOne} isOpen={false} onClick={false} />
-        <AccordionItem title="Title 2" content="Content 2" isOpen={false} onClick={false} />
-        <AccordionItem title="Title 3" content="Content 3" isOpen={false} onClick={false} />
+        <AccordionItem title="Title 1">Hello</AccordionItem>
+        <AccordionItem title="Title 2">Goodybe</AccordionItem>
       </Accordion>
-
-
 
     </>
   )
