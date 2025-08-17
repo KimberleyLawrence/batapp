@@ -1,5 +1,7 @@
+import Batnoise from "~/components/batnoise";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import Pagetitle from "~/components/pagetitle";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,6 +10,13 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
+export default function Calender() {
+  return (
+    <>
+      <Pagetitle name="Bat Calender"/> 
+      
+ 
+
+    </>
+  )
 }
