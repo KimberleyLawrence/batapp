@@ -63,18 +63,18 @@ export default function Look() {
       
       
       
- <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+ <div className="bg-yellow-100 dark:bg-gray-800 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
       <div className="relative overflow-x-auto sm:rounded-lg">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
 
         
-            <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
               <td className="p-4">
-                <img src="/public/images/alert.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                <img src="/public/images/alert.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="alert" />
               </td>
               <td className="px-6 py-4 text-gray-900 dark:text-white">
                 
-                  <p>A very low pup or pups on the ground are in direct danger, may be compromised, susceptible to dog attack and will be treated as high priority.</p>
+                  <h6>A very low pup or pups on the ground are in direct danger, may be compromised, susceptible to dog attack and will be treated as high priority.</h6>
               </td>
             </tr>
 
@@ -83,7 +83,29 @@ export default function Look() {
         
         </table>
       </div>
-    </div>
+      </div>
+      
+
+      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Questions to Consider</h2></span>
+
+      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+      <div className="relative overflow-x-auto sm:rounded-lg">
+       <p> <strong> You may also be asked these questions by a carer/rescuer </strong></p>
+                 <ul className="pl-5 list-disc">
+                    <li>Age: How big is it (ie size of your hand? Bigger?)</li>
+                    <li>Condition:</li>
+                        <ul className="pl-5 list-disc">
+                             <li>Lethargic?</li>
+                             <li>Does it have bright eyes?</li>
+                             <li>Alone or With Adults?</li>
+                             <li>Are there adults near by?</li>
+                             <li>Has baby just fallen & mum is looking for them?</li>
+                        </ul>
+                    <li>Call / Crying: Is the sound hoarse? Is the pup quiet?</li>
+                </ul>
+      </div>
+      </div>
+      
 
     </>
   )
