@@ -7,10 +7,10 @@ export default function Batnoise() {
 
 
         <>
- <audio controls>
-        <source src={batnoise} type="audio/wav"/>
-                                            Your browser does not support the audio element.
-                                            </audio>
+            <audio controls className="inline-flex h-12 w-35">
+                <source src={batnoise} type="audio/wav" />
+                Your browser does not support the audio element.
+            </audio>
 
         </>
     )

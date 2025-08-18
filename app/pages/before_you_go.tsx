@@ -131,7 +131,7 @@ export default function BeforeYouGo() {
     <>
       <Pagetitle name="Before You Go" />
 
-      <Batnoise />
+     
 
       <Accordion>
         <AccordionItem title="Safety" content={safteyOne} isOpen={false} onClick={false} />
