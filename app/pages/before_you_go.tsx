@@ -130,8 +130,7 @@ export default function BeforeYouGo() {
   return (
     <>
 
-      <Pagetitle name="Before You Go" />
-      <Batnoise />
+
       <Accordion>
         <AccordionItem title="Safety">
           {safteyOne}
