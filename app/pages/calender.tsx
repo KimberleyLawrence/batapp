@@ -16,7 +16,7 @@ export default function Calender() {
             <Pagetitle name="Bat Calender" />
 
 
-           
+
 
             <div className="grid md:grid-cols-2 gap-8">
 
@@ -68,7 +68,7 @@ export default function Calender() {
                         </tr>
 
                         <tr className="bg-red-600 border-b text-center ">
-                            <td colSpan="3">CRITICAL</td>
+                            <td colSpan={3}>CRITICAL</td>
                         </tr>
 
                         <tr className="bg-red-300 text-black border-b ">
@@ -97,7 +97,7 @@ export default function Calender() {
 
 
                         <tr className="bg-orange-600 border-b text-center">
-                            <td colSpan="3">URGENT</td>
+                            <td colSpan={3}>URGENT</td>
                         </tr>
 
                         <tr className="bg-orange-300 text-black border-b ">
@@ -133,7 +133,7 @@ export default function Calender() {
                         </tr>
 
                         <tr className="bg-green-600 border-b text-center">
-                            <td colSpan="3">NON-URGENT</td>
+                            <td colSpan={3}>NON-URGENT</td>
                         </tr>
 
                         <tr className="bg-green-200 text-black border-b ">

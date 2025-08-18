@@ -53,95 +53,103 @@ const safteyOne =
       </div>
     </div>
 
-    
+
 
   </>);
 
 const safteyTwo =
   (<>
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+    <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
 
-              
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                <ul className="list-disc">
-                  <li>Binoculars</li>
-                  <li>Water</li>
-                  <li>Sun Protection</li>
-                  <li>Aerogard</li>
-                  <li>Gloves</li>
-                  <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
-                  <li>Long Socks /Long Pants/protective Shoes</li>
-                </ul>
-              </p>
-              
 
-            </div>
-      
+      <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+        <ul className="list-disc">
+          <li>Binoculars</li>
+          <li>Water</li>
+          <li>Sun Protection</li>
+          <li>Aerogard</li>
+          <li>Gloves</li>
+          <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
+          <li>Long Socks /Long Pants/protective Shoes</li>
+        </ul>
+      </p>
+
+
+    </div>
+
   </>);
-  const safteyThree =
+const safteyThree =
   (<>
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                <ul className="list-disc">
-               
-                  <li>Water - preboiled preferred</li>
-                  <li>Bat wraps</li>
-                  <li>Syringes</li>
-                  <li>Dummies/teats</li>
-                  <li>Glucose (glucodin powder)</li>
-                  <li>Basket & handwarmers</li>
-                  <li>Identification</li>
-                </ul>
-              </p>
+    <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+      <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+        <ul className="list-disc">
 
-            </div>
-      
+          <li>Water - preboiled preferred</li>
+          <li>Bat wraps</li>
+          <li>Syringes</li>
+          <li>Dummies/teats</li>
+          <li>Glucose (glucodin powder)</li>
+          <li>Basket & handwarmers</li>
+          <li>Identification</li>
+        </ul>
+      </p>
+
+    </div>
+
   </>);
 
-  const safteyFour =
-    (<>
-      <table>
+const safteyFour =
+  (<>
+    <table>
       <tbody>
-            <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-              
-              <td className="px-6 py-4 text-gray-900 dark:text-white">
-                
-                <ul className="list-disc">
-                    <li>Do not attempt retrieval without second opinion from experienced carers or rescuers.</li>
-                    <li>Retrieving pups needs to be done as quietly as possible without disrupting the camp.</li>
-                    <li>Tree climbers will only be used for pups outside of the camp.</li>
-                    <li>Rescuers with 10M+ poles must be experienced or trained before attempting pole rescue.</li>
-                    <li>All pups rescued(?) must be reported to group chat, Tamsyn, Emma H or Megan.</li>
-                </ul>
-              </td>
+        <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+          <td className="px-6 py-4 text-gray-900 dark:text-white">
+
+            <ul className="list-disc">
+              <li>Do not attempt retrieval without second opinion from experienced carers or rescuers.</li>
+              <li>Retrieving pups needs to be done as quietly as possible without disrupting the camp.</li>
+              <li>Tree climbers will only be used for pups outside of the camp.</li>
+              <li>Rescuers with 10M+ poles must be experienced or trained before attempting pole rescue.</li>
+              <li>All pups rescued(?) must be reported to group chat, Tamsyn, Emma H or Megan.</li>
+            </ul>
+          </td>
         </tr>
-        </tbody>
-        </table>
-    
-      
-      
+      </tbody>
+    </table>
 
 
 
 
-    </>  );
+
+
+
+  </>);
 
 export default function BeforeYouGo() {
   return (
     <>
-      <Pagetitle name="Before You Go" />
 
-     
 
       <Accordion>
-        <AccordionItem title="Safety" content={safteyOne} isOpen={false} onClick={false} />
-        <AccordionItem title="Observing Equipment" content={safteyTwo} isOpen={false} onClick={false} />
-        <AccordionItem title="Rescue Equipment" content={safteyThree} isOpen={false} onClick={false} />
-        <AccordionItem title="Guidelines" content={safteyFour} isOpen={false} onClick={false} />
+        <AccordionItem title="Safety">
+          {safteyOne}
+        </AccordionItem>
+        <AccordionItem title="Observing Equipment">
+          {safteyTwo}
+        </AccordionItem>
+        <AccordionItem title="Rescue Equipment">
+          {safteyThree}
+        </AccordionItem>
+        <AccordionItem title="Guidelines">
+          {safteyFour}
+        </AccordionItem>
       </Accordion>
+
+
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-       
+
 
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -168,7 +176,7 @@ export default function BeforeYouGo() {
 
 
 
-            
+
 
 
 
