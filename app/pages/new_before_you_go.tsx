@@ -137,23 +137,125 @@ const safteyFour =
 export default function BeforeYouGo() {
   return (
     <>
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-3">Before You Go </h2></span>
+      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3">Before You Go</h2></span>
 
-      <Accordion>
-        <AccordionItem title="Safety">
-          {safteyOne}
-        </AccordionItem>
-        <AccordionItem title="Observing Equipment">
-          {safteyTwo}
-        </AccordionItem>
-        <AccordionItem title="Rescue Equipment">
-          {safteyThree}
-        </AccordionItem>
-        <AccordionItem title="Guidelines">
-          {safteyFour}
-        </AccordionItem>
-      </Accordion>
 
+
+
+
+      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  mb-8">
+
+        <div className="relative overflow-x-auto sm:rounded-lg"><span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold m-3">Safety</h2></span>
+
+          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ml-2">
+
+            <tbody>
+              <tr className=" border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td className="p-4">
+                  <svg className="w-20 h-20 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>
+
+                </td>
+                <td className=" px-6 py-4 text-gray-900 dark:text-white">
+                  <h1 className="font-semibold ">Pair Up</h1>
+                  <p>Go in Pairs or let someone know you are going to check camp.</p>
+                </td>
+              </tr>
+
+              <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td className="p-4">
+                  <svg className="w-20 h-20  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14" />
+                  </svg>
+
+                </td>
+                <td className="px-6 py-4 text-gray-900 dark:text-white">
+                  <h6 className="font-semibold">Be Quiet</h6>
+                  Please be quiet and walk slowly through camp.
+                </td>
+              </tr>
+
+              <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td className="p-4">
+                  <img src="/public/images/person-hiking-solid_wpath_outline.svg" className="w-20 h-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
+                </td>
+                <td className="px-6 py-4 text-gray-900 dark:text-white">
+                  <h6 className="font-semibold">Walk on Path</h6>
+                  <p>ALWAYS stay on path - please do not go under the camp of bats.</p>
+
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-3 m-3">Equipment </h2></span>
+
+
+      <div className="grid md:grid-cols-2 gap-8">
+
+
+        <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-12">
+
+          <tbody>
+            <span>
+            <tr>
+              <td className="">
+                <h2 className="text-gray-900 dark:text-white text-2xl mb-2  "> Observing</h2>
+                <ul className="list-disc p-5">
+                  <li>Binoculars</li>
+                  <li>Water</li>
+                  <li>Sun Protection</li>
+                  <li>Aerogard</li>
+                  <li>Gloves</li>
+                  <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
+                  <li>Long Socks /Long Pants/protective Shoes</li>
+                </ul>
+              </td>
+
+              <td className="border-s ps-5 border-gray-400">
+
+                <h2 className="text-gray-900 dark:text-white text-2xl mb-2 "> Rescuing</h2>
+                <ul className="list-disc p-5">
+
+                  <li>Water - preboiled preferred</li>
+                  <li>Bat wraps</li>
+                  <li>Syringes</li>
+                  <li>Dummies/teats</li>
+                  <li>Glucose (glucodin powder)</li>
+                  <li>Basket & handwarmers</li>
+                  <li>Identification</li>
+                </ul>
+              </td>
+              </tr>
+              </span>
+          </tbody>
+        </div>
+      </div>
+
+      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mt-5 m-3">Guidelines </h2></span>
+
+      <table>
+        <tbody>
+
+          <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+            <td className="px-6 py-4 text-gray-900 dark:text-white">
+
+              <ul className="list-disc">
+                <li>Do not attempt retrieval without second opinion from experienced carers or rescuers.</li>
+                <li>Retrieving pups needs to be done as quietly as possible without disrupting the camp.</li>
+                <li>Tree climbers will only be used for pups outside of the camp.</li>
+                <li>Rescuers with 10M+ poles must be experienced or trained before attempting pole rescue.</li>
+                <li>All pups rescued(?) must be reported to group chat, Tamsyn, Emma H or Megan.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8  mx-auto max-w-screen-xl lg:py-16">

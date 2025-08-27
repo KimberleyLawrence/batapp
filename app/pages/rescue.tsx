@@ -13,7 +13,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Rescue() {
   return (
     <>
-      <Pagetitle name="How to Rescue and Wrap"/> 
+     <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3">Rescue and Wrap</h2></span>
       
       
 
