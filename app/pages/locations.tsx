@@ -15,7 +15,7 @@ export default function Locations() {
     <>
 
       <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-3">Locations </h2></span>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 ">
         <div className=" mx-auto max-w-screen-xl lg:py-16">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  md:p-12">
@@ -30,62 +30,65 @@ export default function Locations() {
 
 
               <iframe src="https://www.google.com.au/maps/d/u/0/embed?mid=1W0OACpLC-KvnQI4EfaITIMKsQSgFwW0&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
-             
-          
-             
-              <div className="grid md:grid-cols-2 gap-8">
-
-
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  ">
-
-                  <tbody className="">
-                    <tr>
-                      <td className="" >
-                        <ul className="list-disc px-6 py-6">
-                          <li>Fairfield Side</li>
-                          <li>Kew Side</li>
-                        </ul>
-                      </td>
-
-                      <td className="" >
-                        <ul className=" list-disc px-12 py-6">
-                          <li>T Intersection</li>
-                          <li>Freeway Bridge</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </div>
-                </div>
-           
 
 
 
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
 
-              <h1 className="font-semibold text-2xl mb-3">Static Map</h1>
-              <img src="/images/yb_map_bats.svg" alt="" className="flex-shrink-0" />
-
-              <div className="row col-sm text-center">
-
-                <div className="col-sm-3 themed-grid-col">
-
-                  <p className="text-orange-600"> T Intersection</p>
-
-                </div>
-                <div className="col-sm-3 themed-grid-col">
-
-                  <p className="text-green-800 col-sm-3"> Fairfield Side</p>
-                </div>
-                <div className="col-sm-3 themed-grid-col">
-                  <p className="text-yellow-600 col-sm-3"> Kew Side</p>
-
-                </div>
-                <div className="col-sm-3 themed-grid-col">
-                  <p className="text-blue-600 col-sm-3"> Freeway Side</p>
-                </div>
+                <tbody>
+                  <tr className="bg-white  dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="flex items-center px-2 py-2 text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
 
 
-              </div>
+                      <div className="text-sm font-semibold">T Intersection</div>
+                    </th>
+                    <td className="">
+                      <div className="flex items-center">
+                      </div>
+                    </td>
+                    <th scope="row" className="flex items-center text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+                      <div className="text-sm font-semibold">Freeway Side</div>
+                    </th>
+
+                  </tr>
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="flex items-center px-2 py-2 text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+
+
+                      <div className="text-sm font-semibold">Kew Side</div>
+                    </th>
+                    <td className="">
+                      <div className="flex items-center">
+                      </div>
+                    </td>
+                    <th scope="row" className="flex items-center text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+                      <div className="text-sm font-semibold">Fairfield Side</div>
+                    </th>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+
+            
+
+
+
+             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  md:p-12">
 
 
 
@@ -93,17 +96,77 @@ export default function Locations() {
 
 
 
+              <h1 className="font-semibold text-2xl mb-2">Static Map</h1>
+            <img src="/images/yb_map_bats.svg" alt="" className="flex-shrink-0" />
 
 
+
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+
+                <tbody>
+                  <tr className="bg-white  dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="flex items-center px-2 py-2 text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+
+
+                      <div className="text-sm font-semibold">T Intersection</div>
+                    </th>
+                    <td className="">
+                      <div className="flex items-center">
+                      </div>
+                    </td>
+                    <th scope="row" className="flex items-center text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+                      <div className="text-sm font-semibold">Freeway Side</div>
+                    </th>
+
+                  </tr>
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="flex items-center px-2 py-2 text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+
+
+                      <div className="text-sm font-semibold">Kew Side</div>
+                    </th>
+                    <td className="">
+                      <div className="flex items-center">
+                      </div>
+                    </td>
+                    <th scope="row" className="flex items-center text-gray-900 whitespace-nowrap dark:text-white">
+                      <svg className="w-[39px] h-[39px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                      </svg>
+                      <div className="text-sm font-semibold">Fairfield Side</div>
+                    </th>
+
+                  </tr>
+
+
+                </tbody>
+              </table>
             </div>
 
 
 
+   
           </div>
+
+
+
         </div>
 
 
+
       </section>
+
+
+
 
 
     </>

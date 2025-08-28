@@ -14,13 +14,13 @@ export default function Contact() {
 
       <div className="w-full  p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700">
         <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Important Contacts</h2></span>
-        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">For any enquiries, questions or concerns</p>
+        <p className="text-md font-normal text-gray-500 dark:text-gray-400">For any enquiries, questions or concerns</p>
         <ul className="my-4 space-y-3">
           <li>
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
               <img src="/public/images/flybynight_logo_fromwebsite.jpg" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
-                <h2 className="font-bold text-gray-900" >Tamsyn</h2>
+                <h2 className="font-bold text-gray-900 text-xl" >Tamsyn</h2>
                 <p className="italic">Fly By Night</p>
               </span>
             </a>
@@ -31,7 +31,7 @@ export default function Contact() {
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
               <img src="/public/images/flybynight_logo_fromwebsite.jpg" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
-                <h2 className="font-bold text-gray-900" >Emma</h2>
+                <h2 className="font-bold text-gray-900 text-xl" >Emma</h2>
                 <p className="italic">Fly By Night</p>
               </span>
             </a>
@@ -41,7 +41,7 @@ export default function Contact() {
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
               <img src="/public/images/FOBB_logo.png" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
-                <h2 className="font-bold text-gray-900" >Megan</h2>
+                <h2 className="font-bold text-gray-900 text-xl" >Megan</h2>
                 <p className="italic">Friends of Bats and Bushcare</p>
               </span>
             </a>
@@ -55,16 +55,50 @@ export default function Contact() {
               </svg>
 
               <span className="flex-1 ms-3 whitespace-nowrap ">
-                <h2 className="font-bold text-gray-900" >What's App Bat Observation Chat </h2>
-                <p className="italic">Invite only</p>
+                <h2 className="font-bold text-gray-900 text-xl " >What's App  </h2>
+                <p className="italic">Bat Observation Chat</p>
+                 
               </span>
             </a>
           </li>
 
           
+       
+
+          
         </ul>
 
       </div>
+
+
+       <section className="bg-white dark:bg-gray-900">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-yellow-200 dark:bg-gray-800 dark:border-gray-700 rounded-lg  md:p-12 mb-8">
+            <div className="relative overflow-x-auto sm:rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
+                <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
+                  <td className="p-3">
+                    <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                  </td>
+                  <td className="px-6 py-4 text-gray-900 dark:text-white">
+                    <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">Human Emergency</h3>
+                    <h1 className="font-semibold">Emergency ID: YBP207</h1>
+                    <p>Located at the toilets at Fairlea oval – Please quote ID Number if you need to call Emergency Services</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <span className="block text-sm text-gray-500 text-center align-bottom dark:text-gray-400"> ©2025 Fly By Night</span>
+      <span className="block text-xs text-gray-500 text-center align-bottom dark:text-gray-400"> <a href="https://kimberleylawrence.com/">App built by KLD</a></span>
 
     </>
   )
