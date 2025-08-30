@@ -5,8 +5,8 @@ import Pagetitle from "~/components/pagetitle";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "How to Report Non-Urgent/Dead Bats | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -16,8 +16,8 @@ export default function Report() {
 
 
 
+      <Pagetitle>How to Report Non-Urgent/Dead Bats</Pagetitle>
 
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-5">How to Report Non-Urgent/Dead Bats</h2></span>
 
       <div className="grid md:grid-cols-2 gap-8 ">
         <div className="bg-gray-100 dark:bg-gray-800 dark:border-gray-700 rounded-lg  md:p-12">
@@ -33,44 +33,44 @@ export default function Report() {
                 </td>
                 <td className="px-6 py-4 text-gray-900 dark:text-white">
                   <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">1. Take a Photo</h3>
-                <ul className="pl-5 list-disc">
+                  <ul className="pl-5 list-disc">
 
                     <li>Please take a picture of the bat zoomed <u>in</u> with your camera</li>
                     <li>Please take a picture of the bat zoomed <u>out</u> and please mark thebat in this picture – We are looking for clear markers(trees/logs/rocks)</li>
                     <li>Mark spot if possible (Use ribbon, sticks, rocks etc.)</li>
                   </ul>
-                  
+
                 </td>
               </tr>
             </table>
 
-                <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
+            <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
               <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
                 <td className="p-3">
                   <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
                   </svg>
 
                 </td>
                 <td className="px-6 py-4 text-gray-900 dark:text-white">
                   <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">2. Record the Location</h3>
-                 <ul className="pl-5 ">
+                  <ul className="pl-5 ">
 
                     <li>Pin drop the location</li>
                     <ul className="list-disc pl-5">
                       <li>Google Maps</li>
                       <li> Avenza </li>
-                        <li>What 3 Words</li>
-                      </ul>
+                      <li>What 3 Words</li>
+                    </ul>
                   </ul>
-                  
+
                 </td>
               </tr>
             </table>
           </div>
         </div>
-        
+
 
       </div>
 

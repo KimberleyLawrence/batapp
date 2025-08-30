@@ -1,13 +1,14 @@
 import Batnoise from "~/components/batnoise";
 import type { Route } from "./+types/home";
 import Pagetitle from "~/components/pagetitle";
-import { Accordion, AccordionItem } from "~/components/accordion";
+
+import ImagePersonHiking from "src/images/person-hiking-solid_wpath_outline.svg";
 
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Before you go | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -46,7 +47,7 @@ const safteyOne =
 
             <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
               <td className="p-4">
-                <img src="/public/images/person-hiking-solid_wpath.svg" className="w-60 md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                <img src={ImagePersonHiking} className="w-60 md:w-32 max-w-full max-h-full" alt="Person Hiking" />
               </td>
               <td className="px-6 py-4 text-gray-900 dark:text-white">
                 <h6 className="font-semibold">Walk on Path</h6>
@@ -137,10 +138,7 @@ const safteyFour =
 export default function BeforeYouGo() {
   return (
     <>
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3">Before You Go</h2></span>
-
-
-
+      <Pagetitle>Before You Go</Pagetitle>
 
 
       <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  mb-4">
@@ -178,7 +176,7 @@ export default function BeforeYouGo() {
 
               <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td className="p-4">
-                  <img src="/public/images/person-hiking-solid_wpath_outline.svg" className="w-18 h-18S md:w-15 max-w-full max-h-full" alt="Apple Watch" />
+                  <img src={ImagePersonHiking} className="w-18 h-18S md:w-15 max-w-full max-h-full" alt="Person Hiking" />
                 </td>
                 <td className="px-6 py-4 text-gray-900 dark:text-white">
                   <h6 className="font-semibold text-2xl">Walk on Path</h6>
@@ -192,28 +190,28 @@ export default function BeforeYouGo() {
         </div>
       </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-yellow-200 dark:bg-gray-800 dark:border-gray-700 rounded-lg  md:p-12 mb-2">
-            <div className="relative overflow-x-auto sm:rounded-lg">
-              <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
-                <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
-                  <td className="p-3">
-                    <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-yellow-200 dark:bg-gray-800 dark:border-gray-700 rounded-lg  md:p-12 mb-2">
+          <div className="relative overflow-x-auto sm:rounded-lg">
+            <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
+              <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
+                <td className="p-3">
+                  <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
 
-                  </td>
-                  <td className="px-6 py-4 text-gray-900 dark:text-white">
-                    <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">Human Emergency</h3>
-                    <h1 className="font-semibold">Emergency ID: YBP207</h1>
-                    <p>Located at the toilets at Fairlea oval – Please quote ID Number if you need to call Emergency Services</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+                </td>
+                <td className="px-6 py-4 text-gray-900 dark:text-white">
+                  <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">Human Emergency</h3>
+                  <h1 className="font-semibold">Emergency ID: YBP207</h1>
+                  <p>Located at the toilets at Fairlea oval – Please quote ID Number if you need to call Emergency Services</p>
+                </td>
+              </tr>
+            </table>
           </div>
-
         </div>
+
+      </div>
 
       <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-3 m-3">Equipment </h2></span>
 
@@ -225,36 +223,36 @@ export default function BeforeYouGo() {
 
           <tbody>
             <span>
-            <tr>
-              <td className="">
-                <h2 className="text-gray-900 dark:text-white text-xl font-bold  "> Observing</h2>
-                <ul className="list-disc p-3">
-                  <li>Binoculars</li>
-                  <li>Water</li>
-                  <li>Sun Protection</li>
-                  <li>Aerogard</li>
-                  <li>Gloves</li>
-                  <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
-                  <li>Long Socks, long pants, protective shoes</li>
-                </ul>
-              </td>
+              <tr>
+                <td className="">
+                  <h2 className="text-gray-900 dark:text-white text-xl font-bold  "> Observing</h2>
+                  <ul className="list-disc p-3">
+                    <li>Binoculars</li>
+                    <li>Water</li>
+                    <li>Sun Protection</li>
+                    <li>Aerogard</li>
+                    <li>Gloves</li>
+                    <li> First Aid Kit (inc. Snake Kit, hand sanitizer)</li>
+                    <li>Long Socks, long pants, protective shoes</li>
+                  </ul>
+                </td>
 
-              <td className="border-s ps-5 border-gray-300">
+                <td className="border-s ps-5 border-gray-300">
 
-                <h2 className="text-gray-900 dark:text-white text-xl font-bold"> Rescuing</h2>
-                <ul className="list-disc p-3">
+                  <h2 className="text-gray-900 dark:text-white text-xl font-bold"> Rescuing</h2>
+                  <ul className="list-disc p-3">
 
-                  <li>Water - preboiled preferred</li>
-                  <li>Bat wraps</li>
-                  <li>Syringes</li>
-                  <li>Dummies/teats</li>
-                  <li>Glucose (glucodin powder)</li>
-                  <li>Basket & handwarmers</li>
-                  <li>Identification</li>
-                </ul>
-              </td>
+                    <li>Water - preboiled preferred</li>
+                    <li>Bat wraps</li>
+                    <li>Syringes</li>
+                    <li>Dummies/teats</li>
+                    <li>Glucose (glucodin powder)</li>
+                    <li>Basket & handwarmers</li>
+                    <li>Identification</li>
+                  </ul>
+                </td>
               </tr>
-              </span>
+            </span>
           </tbody>
         </div>
       </div>
@@ -280,7 +278,7 @@ export default function BeforeYouGo() {
         </tbody>
       </table>
 
- 
+
 
 
 

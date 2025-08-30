@@ -1,10 +1,13 @@
 import Pagetitle from "~/components/pagetitle";
+import ContactItem from "~/components/contact";
 import type { Route } from "./+types/home";
+import ImageFlyByNightLogo from "src/images/flybynight_logo_fromwebsite.jpg";
+import ImageFFOB from "src/images/FOBB_logo.png";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Important Contacts | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -12,13 +15,20 @@ export default function Contact() {
   return (
     <>
 
+      <Pagetitle>Important Contacts</Pagetitle>
+
       <div className="w-full  p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-        <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Important Contacts</h2></span>
         <p className="text-md font-normal text-gray-500 dark:text-gray-400">For any enquiries, questions or concerns</p>
         <ul className="my-4 space-y-3">
+
+          <ContactItem name="Tamsyn" url="#" icon={ImageFlyByNightLogo} >Fly by Night</ContactItem>
+          <ContactItem name="Emma" url="#" icon={ImageFlyByNightLogo} >Fly by Night</ContactItem>
+          <ContactItem name="Megan" url="#" icon={ImageFFOB} >Friends of Bats and Bushcare</ContactItem>
+
+          {/* 
           <li>
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <img src="/public/images/flybynight_logo_fromwebsite.jpg" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
+              <img src={ImageFlyByNightLogo} className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
                 <h2 className="font-bold text-gray-900 text-xl" >Tamsyn</h2>
                 <p className="italic">Fly By Night</p>
@@ -29,7 +39,7 @@ export default function Contact() {
 
           <li>
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <img src="/public/images/flybynight_logo_fromwebsite.jpg" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
+              <img src={ImageFlyByNightLogo} className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
                 <h2 className="font-bold text-gray-900 text-xl" >Emma</h2>
                 <p className="italic">Fly By Night</p>
@@ -39,13 +49,14 @@ export default function Contact() {
 
           <li>
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-              <img src="/public/images/FOBB_logo.png" className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
+              <img src={ImageFFOB} className="w-20 md:w-15 max-w-full max-h-full" alt="Apple Watch" />
               <span className="flex-1 ms-3 whitespace-nowrap ">
                 <h2 className="font-bold text-gray-900 text-xl" >Megan</h2>
                 <p className="italic">Friends of Bats and Bushcare</p>
               </span>
             </a>
           </li>
+        */}
 
           <li>
             <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
@@ -57,21 +68,21 @@ export default function Contact() {
               <span className="flex-1 ms-3 whitespace-nowrap ">
                 <h2 className="font-bold text-gray-900 text-xl " >What's App  </h2>
                 <p className="italic">Bat Observation Chat</p>
-                 
+
               </span>
             </a>
           </li>
 
-          
-       
 
-          
+
+
+
         </ul>
 
       </div>
 
 
-       <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-yellow-200 dark:bg-gray-800 dark:border-gray-700 rounded-lg  md:p-12 mb-8">
             <div className="relative overflow-x-auto sm:rounded-lg">

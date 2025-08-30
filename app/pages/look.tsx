@@ -5,8 +5,8 @@ import Pagetitle from "~/components/pagetitle";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "What to Look For | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -15,8 +15,7 @@ export default function Look() {
     <>
 
 
-
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3">What to Look For</h2></span>
+      <Pagetitle>What to Look For</Pagetitle>
 
       <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-12 mb-2">
         <div className="relative overflow-x-auto sm:rounded-lg">
@@ -40,8 +39,8 @@ export default function Look() {
               <tr className="border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td className="p-4">
                   <svg className="w-20 h-20 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M20 16v-4a8 8 0 1 0-16 0v4m16 0v2a2 2 0 0 1-2 2h-2v-6h2a2 2 0 0 1 2 2ZM4 16v2a2 2 0 0 0 2 2h2v-6H6a2 2 0 0 0-2 2Z"/>
-</svg>
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M20 16v-4a8 8 0 1 0-16 0v4m16 0v2a2 2 0 0 1-2 2h-2v-6h2a2 2 0 0 1 2 2ZM4 16v2a2 2 0 0 0 2 2h2v-6H6a2 2 0 0 0-2 2Z" />
+                  </svg>
 
 
                 </td>

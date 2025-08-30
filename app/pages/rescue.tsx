@@ -5,8 +5,8 @@ import Pagetitle from "~/components/pagetitle";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Rescue and Wrap | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -15,14 +15,14 @@ export default function Rescue() {
     <>
 
 
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3">Rescue and Wrap</h2></span>
+      <Pagetitle>Rescue and Wrap</Pagetitle>
 
       <div className="bg-red-300 dark:bg-gray-800 dark:border-gray-700 rounded-lg md:p-12 mb-5">
         <div className="relative overflow-x-auto sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
 
 
-            <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
+            <tr className="dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-600">
               <td className="p-1">
                 <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />

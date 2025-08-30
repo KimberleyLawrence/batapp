@@ -1,5 +1,5 @@
 
-import batnoise from "../../public/media/bat_noise_trimmed.wav";
+import batnoise from "src/media/bat_noise_trimmed.wav";
 
 //insert code for app between return (         )}
 export default function Batnoise() {

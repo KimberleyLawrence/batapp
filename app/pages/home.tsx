@@ -5,8 +5,8 @@ import { Link } from "react-router";
 // SEO Data/info
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -18,9 +18,11 @@ export default function Home() {
 
     <>
 
+      <Pagetitle>Bat Monitoring</Pagetitle>
 
       <div className="w-full p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-        <span><h2 className="text-gray-900 dark:text-white text-4xl font-extrabold mb-3">Bat Monitoring </h2></span>
+
+
         <p className="text-md font-normal text-gray-500 dark:text-gray-400">Information for observation and rescuing within the Yarra Bend Flying Fox colony.</p>
         <ul className="my-4 space-y-3">
           <li>
@@ -127,7 +129,7 @@ export default function Home() {
 
       </div >
 
-      
+
 
 
     </>

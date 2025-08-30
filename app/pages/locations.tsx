@@ -5,8 +5,8 @@ import Pagetitle from "~/components/pagetitle";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Locations | Bats Victoria" },
+    { name: "description", content: "Bats Victoria" },
   ];
 }
 
@@ -14,7 +14,7 @@ export default function Locations() {
   return (
     <>
 
-      <span><h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-3">Locations </h2></span>
+      <Pagetitle>Locations</Pagetitle>
       <section className="bg-white dark:bg-gray-900 ">
         <div className=" mx-auto max-w-screen-xl lg:py-16">
           <div className="grid md:grid-cols-2 gap-8">
@@ -84,11 +84,11 @@ export default function Locations() {
               </table>
             </div>
 
-            
 
 
 
-             <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  md:p-12">
+
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  md:p-12">
 
 
 
@@ -97,7 +97,7 @@ export default function Locations() {
 
 
               <h1 className="font-semibold text-2xl mb-2">Static Map</h1>
-            <img src="/images/yb_map_bats.svg" alt="" className="flex-shrink-0" />
+              <img src="/images/yb_map_bats.svg" alt="" className="flex-shrink-0" />
 
 
 
@@ -154,7 +154,7 @@ export default function Locations() {
 
 
 
-   
+
           </div>
 
 
