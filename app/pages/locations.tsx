@@ -1,7 +1,7 @@
 import Batnoise from "~/components/batnoise";
 import type { Route } from "./+types/home";
 import Pagetitle from "~/components/pagetitle";
-
+import ImageStaticMap from "src/images/yb_map_bats.svg";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -97,7 +97,7 @@ export default function Locations() {
 
 
               <h1 className="font-semibold text-2xl mb-2">Static Map</h1>
-              <img src="/images/yb_map_bats.svg" alt="" className="flex-shrink-0" />
+              <img src={ImageStaticMap} alt="" className="flex-shrink-0" />
 
 
 
