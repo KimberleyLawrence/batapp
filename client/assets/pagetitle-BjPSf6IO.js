@@ -1,0 +1,1 @@
+import{p as t}from"./chunk-UH6JLGW7-BNEJ6wuh.js";function x({children:e}){return t.jsx(t.Fragment,{children:t.jsx("span",{children:t.jsx("h2",{className:"text-gray-900 dark:text-white text-3xl font-extrabold mb-2 m-3",children:e})})})}export{x as P};
