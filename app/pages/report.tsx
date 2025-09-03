@@ -25,7 +25,7 @@ export default function Report() {
             <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
               <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
                 <td className="p-3">
-                  <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 24">
                     <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M4 18V8a1 1 0 0 1 1-1h1.5l1.707-1.707A1 1 0 0 1 8.914 5h6.172a1 1 0 0 1 .707.293L17.5 7H19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z" />
                     <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   </svg>
@@ -46,14 +46,14 @@ export default function Report() {
 
             <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400">
               <tr className="dark:bg-gray-800 dark:border-gray-700  dark:hover:bg-gray-600">
-                <td className="p-3">
-                  <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <td className="p-2">
+                  <svg className="w-[70px] h-[70px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
                   </svg>
 
                 </td>
-                <td className="px-6 py-4 text-gray-900 dark:text-white">
+                <td className="px-2 py-4 text-gray-900 dark:text-white">
                   <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">2. Record the Location</h3>
                   <ul className="pl-5 ">
 

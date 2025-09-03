@@ -3,6 +3,7 @@ import type { Route } from "./+types/home";
 import Pagetitle from "~/components/pagetitle";
 import Imagebatwrap1 from "src/images/bat_wrap-01-2.png";
 import Imagebatwrap2 from "src/images/bat_wrap_2.png";
+import Rescuedbat from "src/images/bat_in_towel.jpg";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -72,7 +73,7 @@ export default function Rescue() {
             <div className="bg-green-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg  md:p-12">
 
               <h1 className="font-semibold text-2xl mt-2 mb-3 ps-3">After Rescue/ Post Retrieval</h1>
-              <img src="/images/bat_in_towel.jpg" alt="" className="flex-shrink-0  max-w-sm mx-auto rounded-lg" />
+              <img src={Rescuedbat} alt="" className="flex-shrink-0  max-w-sm mx-auto rounded-lg" />
 
 
               <ol className=" m-5 max-w-md space-y-1 list-decimal list-inside dark:text-gray-400">

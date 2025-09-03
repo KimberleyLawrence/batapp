@@ -1,6 +1,7 @@
 import Batnoise from "~/components/batnoise";
 import type { Route } from "./+types/home";
 import Pagetitle from "~/components/pagetitle";
+import Alonebat from "src/images/alone_bat_2.svg";
 
 
 export function meta({ }: Route.MetaArgs) {
@@ -53,7 +54,7 @@ export default function Look() {
               </tr>
               <tr className=" dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td className="p-4">
-                  <img src="/public/images/alone_bat_2.svg" className=" md:w-32 max-w-full max-h-full" alt="Apple Watch" />
+                  <img src={Alonebat} className=" md:w-32 max-w-full max-h-full" alt="Apple Watch" />
                 </td>
                 <td className="px-6 py-4 text-gray-900 dark:text-white">
                   <h6 className="font-semibold text-2xl ">Alone for a long period</h6>
