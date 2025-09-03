@@ -23,7 +23,7 @@ export default function Contact() {
 
           <ContactItem name="Tamsyn" url="#" icon={ImageFlyByNightLogo} >Fly by Night</ContactItem>
           <ContactItem name="Emma" url="#" icon={ImageFlyByNightLogo} >Fly by Night</ContactItem>
-          <ContactItem name="Megan" url="#" icon={ImageFFOB} >Friends of Bats and Bushcare</ContactItem>
+          <ContactItem name="Megan" url="#" icon={ImageFFOB} >Friends of Bats & Bushcare</ContactItem>
 
           {/* 
           <li>

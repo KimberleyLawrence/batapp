@@ -31,7 +31,7 @@ export default function Report() {
                   </svg>
 
                 </td>
-                <td className="px-6 py-4 text-gray-900 dark:text-white">
+                <td className="px-4 py-4 text-gray-900 dark:text-white">
                   <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">1. Take a Photo</h3>
                   <ul className="pl-5 list-disc">
 
@@ -53,7 +53,7 @@ export default function Report() {
                   </svg>
 
                 </td>
-                <td className="px-2 py-4 text-gray-900 dark:text-white">
+                <td className="px-4 py-4 text-gray-900 dark:text-white">
                   <h3 className="text-gray-900 dark:text-white text-xl font-extrabold ">2. Record the Location</h3>
                   <ul className="pl-5 ">
 

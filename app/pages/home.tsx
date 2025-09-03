@@ -79,7 +79,7 @@ export default function Home() {
 
               <span className="flex-1 ms-3 whitespace-nowrap ">
                 <h2 className="font-bold text-gray-900 text-xl" >Rescue and Wrap</h2>
-                <p className="italic">Vaxxed and approved rescuers only</p>
+                <p className="italic">Vaxxed rescuers only</p>
               </span>
             </Link>
           </li>
