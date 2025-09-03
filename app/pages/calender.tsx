@@ -162,7 +162,7 @@ export default function Calender() {
                                     <li> Pup low in tree, vocalizing, no adults around, no adults responding.</li>
                                 </td>
                             </td>
-                            <td className="list-disc px-4 py-1 border-s ps-4 border-gray-400 text-sm">
+                            <td className="list-disc px-4 py-1 border-s ps-3 border-gray-400 text-sm">
 
                                 <li>Pup on ground. </li>
                                 <li>Pup low in tree, vocalizing, no adults around, no adults responding.</li>
