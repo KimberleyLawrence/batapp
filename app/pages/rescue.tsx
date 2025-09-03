@@ -4,6 +4,7 @@ import Pagetitle from "~/components/pagetitle";
 import Imagebatwrap1 from "src/images/bat_wrap-01-2.png";
 import Imagebatwrap2 from "src/images/bat_wrap_2.png";
 import Rescuedbat from "src/images/bat_in_towel.jpg";
+import { Modal } from "~/components/modal";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -16,8 +17,9 @@ export default function Rescue() {
   return (
     <>
 
-
-      <Pagetitle>Rescue and Wrap</Pagetitle>
+      
+      <Modal />
+      <Pagetitle>Rescue and Wraps</Pagetitle>
 
       <div className="bg-red-300 dark:bg-gray-800 dark:border-gray-700 rounded-lg md:p-12 mb-3">
         <div className="relative overflow-x-auto sm:rounded-lg">
